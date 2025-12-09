@@ -26,7 +26,7 @@ Bem-vindo ao **Sentinela**, um projeto direcionado à Faculdade Senac para anál
 ## Tecnologias
 
 | Tecnologia         | Descrição                    | Link                                                      |
-|--------------------|-----------------------------|-----------------------------------------------------------|
+|--------------------|------------------------------|-----------------------------------------------------------|
 | Streamlit          | Web app interativo           | [streamlit.io](https://streamlit.io/)                     |
 | Pandas             | Manipulação de dados         | [pandas.pydata.org](https://pandas.pydata.org/)           |
 | Numpy              | Operações numéricas          | [numpy.org](https://numpy.org/)                           |
@@ -37,20 +37,33 @@ Bem-vindo ao **Sentinela**, um projeto direcionado à Faculdade Senac para anál
 
 ## Iniciando Localmente
 
-- 1. Crie um ambiente virtual (opcional mas recomendado)
+### Pré-requisitos
 
+- Python 3.10 ou superior
+
+### Passos
+
+1. Crie um ambiente virtual:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+# ou: venv\Scripts\activate  # Windows
 ```
-python3 -m venv .venv
-source .venv/bin/activate  # (ou .venv\Scripts\activate no Windows)
+
+2. Instale as dependências:
+
+```bash
+pip install -r requirements.txt
 ```
 
-- 2. Instale as dependências usando o comando
-``pip install -r requirements.txt``
+3. Rode o painel Streamlit:
 
-- 3. Rode o painel Streamlit com
-``streamlit run dashboard.py``
+```bash
+streamlit run dashboard.py
+```
 
-Os dados são simulados automaticamente na inicialização, não há necessidade de baixar datasets.
+> Os dados são simulados automaticamente na inicialização, não há necessidade de baixar datasets.
 
 ## Principais Dashboards
 
@@ -70,11 +83,10 @@ Fique à vontade para abrir issues ou PRs! Sugestões, correções e novas ideia
 - Por se tratar de um projeto acadêmico, o painel utiliza **dados sintéticos**, não reais.
 - Projeto aberto para fins educacionais, inspirando-se em práticas modernas de análise e visualização de dados.
 
-
 ## Autor
+
 - [Cristian Santos](https://github.com/zcriticz)
 
 ## Licença
-Esse projeto é licenciado através do MIT. Para mais informações, leia [license](license)
 
-
+Esse projeto é licenciado através do MIT. Para mais informações, leia [LICENSE](LICENSE).
