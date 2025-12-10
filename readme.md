@@ -41,23 +41,59 @@ Bem-vindo ao **Sentinela**, um projeto direcionado à Faculdade Senac para anál
 
 - Python 3.10 ou superior
 
-### Passos
+### Linux/Mac
 
 1. Crie um ambiente virtual:
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou: venv\Scripts\activate  # Windows
 ```
 
-2. Instale as dependências:
+2. Ative o ambiente virtual:
+
+**Para Bash/Zsh:**
+```bash
+source venv/bin/activate
+```
+
+**Para Fish shell:**
+```fish
+source venv/bin/activate.fish
+```
+
+3. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Rode o painel Streamlit:
+4. Execute o painel Streamlit:
+
+```bash
+streamlit run dashboard.py
+```
+
+### Windows
+
+1. Crie um ambiente virtual:
+
+```bash
+python -m venv venv
+```
+
+2. Ative o ambiente virtual:
+
+```bash
+venv\Scripts\activate
+```
+
+3. Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Execute o painel Streamlit:
 
 ```bash
 streamlit run dashboard.py
